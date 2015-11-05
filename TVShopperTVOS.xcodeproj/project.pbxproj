@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EDF4AB5F1BEAFABA00100DBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4AB5E1BEAFABA00100DBA /* AppDelegate.swift */; };
+		EDF4AB611BEAFABA00100DBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4AB601BEAFABA00100DBA /* ViewController.swift */; };
+		EDF4AB641BEAFABA00100DBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF4AB621BEAFABA00100DBA /* Main.storyboard */; };
+		EDF4AB661BEAFABA00100DBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDF4AB651BEAFABA00100DBA /* Assets.xcassets */; };
+		EDF4AB711BEAFABA00100DBA /* TVShopperTVOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4AB701BEAFABA00100DBA /* TVShopperTVOSTests.swift */; };
+		EDF4AB7C1BEAFABA00100DBA /* TVShopperTVOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4AB7B1BEAFABA00100DBA /* TVShopperTVOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EDF4AB6D1BEAFABA00100DBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDF4AB531BEAFABA00100DBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDF4AB5A1BEAFABA00100DBA;
+			remoteInfo = TVShopperTVOS;
+		};
+		EDF4AB781BEAFABA00100DBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EDF4AB531BEAFABA00100DBA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EDF4AB5A1BEAFABA00100DBA;
+			remoteInfo = TVShopperTVOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EDF4AB5B1BEAFABA00100DBA /* TVShopperTVOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVShopperTVOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF4AB5E1BEAFABA00100DBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDF4AB601BEAFABA00100DBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EDF4AB631BEAFABA00100DBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EDF4AB651BEAFABA00100DBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EDF4AB671BEAFABA00100DBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDF4AB6C1BEAFABA00100DBA /* TVShopperTVOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVShopperTVOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF4AB701BEAFABA00100DBA /* TVShopperTVOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShopperTVOSTests.swift; sourceTree = "<group>"; };
+		EDF4AB721BEAFABA00100DBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDF4AB771BEAFABA00100DBA /* TVShopperTVOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVShopperTVOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF4AB7B1BEAFABA00100DBA /* TVShopperTVOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShopperTVOSUITests.swift; sourceTree = "<group>"; };
+		EDF4AB7D1BEAFABA00100DBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EDF4AB581BEAFABA00100DBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF4AB691BEAFABA00100DBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF4AB741BEAFABA00100DBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EDF4AB521BEAFABA00100DBA = {
+			isa = PBXGroup;
+			children = (
+				EDF4AB5D1BEAFABA00100DBA /* TVShopperTVOS */,
+				EDF4AB6F1BEAFABA00100DBA /* TVShopperTVOSTests */,
+				EDF4AB7A1BEAFABA00100DBA /* TVShopperTVOSUITests */,
+				EDF4AB5C1BEAFABA00100DBA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EDF4AB5C1BEAFABA00100DBA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EDF4AB5B1BEAFABA00100DBA /* TVShopperTVOS.app */,
+				EDF4AB6C1BEAFABA00100DBA /* TVShopperTVOSTests.xctest */,
+				EDF4AB771BEAFABA00100DBA /* TVShopperTVOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EDF4AB5D1BEAFABA00100DBA /* TVShopperTVOS */ = {
+			isa = PBXGroup;
+			children = (
+				EDF4AB5E1BEAFABA00100DBA /* AppDelegate.swift */,
+				EDF4AB601BEAFABA00100DBA /* ViewController.swift */,
+				EDF4AB621BEAFABA00100DBA /* Main.storyboard */,
+				EDF4AB651BEAFABA00100DBA /* Assets.xcassets */,
+				EDF4AB671BEAFABA00100DBA /* Info.plist */,
+			);
+			path = TVShopperTVOS;
+			sourceTree = "<group>";
+		};
+		EDF4AB6F1BEAFABA00100DBA /* TVShopperTVOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				EDF4AB701BEAFABA00100DBA /* TVShopperTVOSTests.swift */,
+				EDF4AB721BEAFABA00100DBA /* Info.plist */,
+			);
+			path = TVShopperTVOSTests;
+			sourceTree = "<group>";
+		};
+		EDF4AB7A1BEAFABA00100DBA /* TVShopperTVOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EDF4AB7B1BEAFABA00100DBA /* TVShopperTVOSUITests.swift */,
+				EDF4AB7D1BEAFABA00100DBA /* Info.plist */,
+			);
+			path = TVShopperTVOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EDF4AB5A1BEAFABA00100DBA /* TVShopperTVOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF4AB801BEAFABA00100DBA /* Build configuration list for PBXNativeTarget "TVShopperTVOS" */;
+			buildPhases = (
+				EDF4AB571BEAFABA00100DBA /* Sources */,
+				EDF4AB581BEAFABA00100DBA /* Frameworks */,
+				EDF4AB591BEAFABA00100DBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TVShopperTVOS;
+			productName = TVShopperTVOS;
+			productReference = EDF4AB5B1BEAFABA00100DBA /* TVShopperTVOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EDF4AB6B1BEAFABA00100DBA /* TVShopperTVOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF4AB831BEAFABA00100DBA /* Build configuration list for PBXNativeTarget "TVShopperTVOSTests" */;
+			buildPhases = (
+				EDF4AB681BEAFABA00100DBA /* Sources */,
+				EDF4AB691BEAFABA00100DBA /* Frameworks */,
+				EDF4AB6A1BEAFABA00100DBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDF4AB6E1BEAFABA00100DBA /* PBXTargetDependency */,
+			);
+			name = TVShopperTVOSTests;
+			productName = TVShopperTVOSTests;
+			productReference = EDF4AB6C1BEAFABA00100DBA /* TVShopperTVOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EDF4AB761BEAFABA00100DBA /* TVShopperTVOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EDF4AB861BEAFABA00100DBA /* Build configuration list for PBXNativeTarget "TVShopperTVOSUITests" */;
+			buildPhases = (
+				EDF4AB731BEAFABA00100DBA /* Sources */,
+				EDF4AB741BEAFABA00100DBA /* Frameworks */,
+				EDF4AB751BEAFABA00100DBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDF4AB791BEAFABA00100DBA /* PBXTargetDependency */,
+			);
+			name = TVShopperTVOSUITests;
+			productName = TVShopperTVOSUITests;
+			productReference = EDF4AB771BEAFABA00100DBA /* TVShopperTVOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EDF4AB531BEAFABA00100DBA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = TVWatchers;
+				TargetAttributes = {
+					EDF4AB5A1BEAFABA00100DBA = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					EDF4AB6B1BEAFABA00100DBA = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = EDF4AB5A1BEAFABA00100DBA;
+					};
+					EDF4AB761BEAFABA00100DBA = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = EDF4AB5A1BEAFABA00100DBA;
+					};
+				};
+			};
+			buildConfigurationList = EDF4AB561BEAFABA00100DBA /* Build configuration list for PBXProject "TVShopperTVOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EDF4AB521BEAFABA00100DBA;
+			productRefGroup = EDF4AB5C1BEAFABA00100DBA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EDF4AB5A1BEAFABA00100DBA /* TVShopperTVOS */,
+				EDF4AB6B1BEAFABA00100DBA /* TVShopperTVOSTests */,
+				EDF4AB761BEAFABA00100DBA /* TVShopperTVOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EDF4AB591BEAFABA00100DBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF4AB661BEAFABA00100DBA /* Assets.xcassets in Resources */,
+				EDF4AB641BEAFABA00100DBA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF4AB6A1BEAFABA00100DBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF4AB751BEAFABA00100DBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EDF4AB571BEAFABA00100DBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF4AB611BEAFABA00100DBA /* ViewController.swift in Sources */,
+				EDF4AB5F1BEAFABA00100DBA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF4AB681BEAFABA00100DBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF4AB711BEAFABA00100DBA /* TVShopperTVOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EDF4AB731BEAFABA00100DBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDF4AB7C1BEAFABA00100DBA /* TVShopperTVOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EDF4AB6E1BEAFABA00100DBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDF4AB5A1BEAFABA00100DBA /* TVShopperTVOS */;
+			targetProxy = EDF4AB6D1BEAFABA00100DBA /* PBXContainerItemProxy */;
+		};
+		EDF4AB791BEAFABA00100DBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EDF4AB5A1BEAFABA00100DBA /* TVShopperTVOS */;
+			targetProxy = EDF4AB781BEAFABA00100DBA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EDF4AB621BEAFABA00100DBA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EDF4AB631BEAFABA00100DBA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EDF4AB7E1BEAFABA00100DBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		EDF4AB7F1BEAFABA00100DBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EDF4AB811BEAFABA00100DBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = TVShopperTVOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ThanasiStratigakis.TVShopperTVOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EDF4AB821BEAFABA00100DBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = TVShopperTVOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ThanasiStratigakis.TVShopperTVOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EDF4AB841BEAFABA00100DBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TVShopperTVOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ThanasiStratigakis.TVShopperTVOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVShopperTVOS.app/TVShopperTVOS";
+			};
+			name = Debug;
+		};
+		EDF4AB851BEAFABA00100DBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TVShopperTVOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ThanasiStratigakis.TVShopperTVOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVShopperTVOS.app/TVShopperTVOS";
+			};
+			name = Release;
+		};
+		EDF4AB871BEAFABA00100DBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TVShopperTVOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ThanasiStratigakis.TVShopperTVOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TVShopperTVOS;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		EDF4AB881BEAFABA00100DBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TVShopperTVOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ThanasiStratigakis.TVShopperTVOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TVShopperTVOS;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EDF4AB561BEAFABA00100DBA /* Build configuration list for PBXProject "TVShopperTVOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF4AB7E1BEAFABA00100DBA /* Debug */,
+				EDF4AB7F1BEAFABA00100DBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EDF4AB801BEAFABA00100DBA /* Build configuration list for PBXNativeTarget "TVShopperTVOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF4AB811BEAFABA00100DBA /* Debug */,
+				EDF4AB821BEAFABA00100DBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EDF4AB831BEAFABA00100DBA /* Build configuration list for PBXNativeTarget "TVShopperTVOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF4AB841BEAFABA00100DBA /* Debug */,
+				EDF4AB851BEAFABA00100DBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EDF4AB861BEAFABA00100DBA /* Build configuration list for PBXNativeTarget "TVShopperTVOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EDF4AB871BEAFABA00100DBA /* Debug */,
+				EDF4AB881BEAFABA00100DBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EDF4AB531BEAFABA00100DBA /* Project object */;
+}
