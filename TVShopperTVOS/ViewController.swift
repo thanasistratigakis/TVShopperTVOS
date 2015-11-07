@@ -11,6 +11,15 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    @IBAction func playVideoAction(sender: AnyObject) {
+        
+        let playerVC = VideoPlayerViewController()
+        playerVC.playVideo()
+        [self.presentViewController(playerVC, animated: true, completion: nil)]
+    }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

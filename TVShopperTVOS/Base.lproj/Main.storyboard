@@ -80,7 +80,7 @@
                                 <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                 <state key="normal" title="Play Video"/>
                                 <connections>
-                                    <segue destination="gP4-fn-DQJ" kind="show" id="bTy-RA-iIc"/>
+                                    <action selector="playVideoAction:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="GYs-Tk-rcI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -107,10 +107,10 @@
         <!--AV Player View Controller-->
         <scene sceneID="ZZK-6L-q7W">
             <objects>
-                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="gP4-fn-DQJ" sceneMemberID="viewController"/>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="gP4-fn-DQJ" customClass="VideoPlayerViewController" customModule="TVShopperTVOS" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ebA-9A-EPb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4178" y="636"/>
+            <point key="canvasLocation" x="2282" y="660"/>
         </scene>
     </scenes>
     <resources>

@@ -15,11 +15,17 @@ class VideoPlayerViewController: AVPlayerViewController, AVPlayerViewControllerD
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        player = AVPlayer(URL: NSURL(string: "https://trello-attachments.s3.amazonaws.com/563ab806b4340cec94805569/563e7678b1f3afcd911bb309/0e268f3cd9412fa33d700a3cd840b5ff/Pharrell_Williams_-_Happy_(Official_Music_Video).mp4")!)
-        player?.play()
+//        player = AVPlayer(URL: NSURL(string: "http://hdjumbo.com/video/down/22897067/2444375/MDcyOWhia1krK0t5K0ExLzkwVUU2cW8rQWRTbzZJR0JTQ0RUS2F4d0NJUlZsNjQxNUE=/Happy+%28Pharrell+Williams%29+%28HDJumbo.Com%29.mp4")!)
+//        player?.play()
 
 
         // Do any additional setup after loading the view.
+    }
+    
+    func playVideo() {
+        player = AVPlayer(URL: NSURL(string: "http://hdjumbo.com/video/down/22897067/2444375/MDcyOWhia1krK0t5K0ExLzkwVUU2cW8rQWRTbzZJR0JTQ0RUS2F4d0NJUlZsNjQxNUE=/Happy+%28Pharrell+Williams%29+%28HDJumbo.Com%29.mp4")!)
+        player?.play()
+        
     }
 
     override func didReceiveMemoryWarning() {
