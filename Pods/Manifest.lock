@@ -1,0 +1,10 @@
+PODS:
+  - HCYoutubeParser (0.0.4)
+
+DEPENDENCIES:
+  - HCYoutubeParser
+
+SPEC CHECKSUMS:
+  HCYoutubeParser: 490db7db2997a293ace484a5d63419b3b053d95f
+
+COCOAPODS: 0.39.0

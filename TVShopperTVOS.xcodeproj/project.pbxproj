@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED5BCACC1BEE8459005A44B3 /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5BCACB1BEE8459005A44B3 /* VideoCollectionViewCell.swift */; };
+		ED2B6D181BEEAEBD00EDC82D /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2B6D171BEEAEBD00EDC82D /* VideoPlayerViewController.swift */; };
 		EDF4AB5F1BEAFABA00100DBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4AB5E1BEAFABA00100DBA /* AppDelegate.swift */; };
 		EDF4AB611BEAFABA00100DBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4AB601BEAFABA00100DBA /* ViewController.swift */; };
 		EDF4AB641BEAFABA00100DBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF4AB621BEAFABA00100DBA /* Main.storyboard */; };
@@ -34,7 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		ED5BCACB1BEE8459005A44B3 /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
+		ED2B6D171BEEAEBD00EDC82D /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		EDF4AB5B1BEAFABA00100DBA /* TVShopperTVOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVShopperTVOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDF4AB5E1BEAFABA00100DBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDF4AB601BEAFABA00100DBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,8 +99,8 @@
 			children = (
 				EDF4AB5E1BEAFABA00100DBA /* AppDelegate.swift */,
 				EDF4AB601BEAFABA00100DBA /* ViewController.swift */,
+				ED2B6D171BEEAEBD00EDC82D /* VideoPlayerViewController.swift */,
 				EDF4AB621BEAFABA00100DBA /* Main.storyboard */,
-				ED5BCACB1BEE8459005A44B3 /* VideoCollectionViewCell.swift */,
 				EDF4AB651BEAFABA00100DBA /* Assets.xcassets */,
 				EDF4AB671BEAFABA00100DBA /* Info.plist */,
 			);
@@ -255,7 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED5BCACC1BEE8459005A44B3 /* VideoCollectionViewCell.swift in Sources */,
+				ED2B6D181BEEAEBD00EDC82D /* VideoPlayerViewController.swift in Sources */,
 				EDF4AB611BEAFABA00100DBA /* ViewController.swift in Sources */,
 				EDF4AB5F1BEAFABA00100DBA /* AppDelegate.swift in Sources */,
 			);
