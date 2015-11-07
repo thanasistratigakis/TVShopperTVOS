@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED5BCACC1BEE8459005A44B3 /* VideoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5BCACB1BEE8459005A44B3 /* VideoCollectionViewCell.swift */; };
 		EDF4AB5F1BEAFABA00100DBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4AB5E1BEAFABA00100DBA /* AppDelegate.swift */; };
 		EDF4AB611BEAFABA00100DBA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4AB601BEAFABA00100DBA /* ViewController.swift */; };
 		EDF4AB641BEAFABA00100DBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDF4AB621BEAFABA00100DBA /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ED5BCACB1BEE8459005A44B3 /* VideoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoCollectionViewCell.swift; sourceTree = "<group>"; };
 		EDF4AB5B1BEAFABA00100DBA /* TVShopperTVOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVShopperTVOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDF4AB5E1BEAFABA00100DBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDF4AB601BEAFABA00100DBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				EDF4AB5E1BEAFABA00100DBA /* AppDelegate.swift */,
 				EDF4AB601BEAFABA00100DBA /* ViewController.swift */,
 				EDF4AB621BEAFABA00100DBA /* Main.storyboard */,
+				ED5BCACB1BEE8459005A44B3 /* VideoCollectionViewCell.swift */,
 				EDF4AB651BEAFABA00100DBA /* Assets.xcassets */,
 				EDF4AB671BEAFABA00100DBA /* Info.plist */,
 			);
@@ -252,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED5BCACC1BEE8459005A44B3 /* VideoCollectionViewCell.swift in Sources */,
 				EDF4AB611BEAFABA00100DBA /* ViewController.swift in Sources */,
 				EDF4AB5F1BEAFABA00100DBA /* AppDelegate.swift in Sources */,
 			);
@@ -472,6 +476,7 @@
 				EDF4AB821BEAFABA00100DBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDF4AB831BEAFABA00100DBA /* Build configuration list for PBXNativeTarget "TVShopperTVOSTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +485,7 @@
 				EDF4AB851BEAFABA00100DBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDF4AB861BEAFABA00100DBA /* Build configuration list for PBXNativeTarget "TVShopperTVOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +494,7 @@
 				EDF4AB881BEAFABA00100DBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

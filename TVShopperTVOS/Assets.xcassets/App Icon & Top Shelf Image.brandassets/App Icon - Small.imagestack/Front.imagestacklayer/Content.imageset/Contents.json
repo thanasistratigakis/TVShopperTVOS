@@ -2,6 +2,7 @@
   "images" : [
     {
       "idiom" : "tv",
+      "filename" : "App_IconFront.png",
       "scale" : "1x"
     }
   ],
