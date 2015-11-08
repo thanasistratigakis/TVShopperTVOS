@@ -28,6 +28,32 @@ class VideoParentViewController: UIViewController {
         
         let popUp = self.childViewControllers[1] as? UIViewController
         
+
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        revealCarrot()
+    }
+    
+    // animate Carrot out
+    func revealCarrot() {
+        
+        UIView.animateWithDuration(1, animations: {
+            self.popUpHeightConstraint.constant = 150
+            self.view.layoutIfNeeded()
+        })
+        
+    }
+    
+    // animate add out
+    func revealAdd() {
+        
+    }
+    
+    // animate carrot out carrot
+    func dismissCarrot() {
+        
     }
 
     override func didReceiveMemoryWarning() {
