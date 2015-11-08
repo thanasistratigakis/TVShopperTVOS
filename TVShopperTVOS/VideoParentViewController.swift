@@ -8,13 +8,13 @@
 
 import UIKit
 
+
 class VideoParentViewController: UIViewController {
     
     @IBOutlet weak var popUpHeightConstraint: NSLayoutConstraint!
     
+    var currentItem: [PFObject] = [];
 
-    
-    
     
     let displayCarrotConstraintHeight: CGFloat = 130.0
     let displayAdConstraintHeight : CGFloat = 280.0
@@ -52,20 +52,35 @@ class VideoParentViewController: UIViewController {
         view.addGestureRecognizer(downSwipe)
     }
     
+    
     func handleSwipes(sender: UISwipeGestureRecognizer) {
         
         if (sender.direction == .Left) {
             print("Left Swipe")
         } else if (sender.direction == .Right) {
             print("Right Swipe")
+//            ParseHelper.queryItemForName("Boosted Electric Skateboard", callBack: updateAd)
+            ParseHelper.queryBoostedBoard()
+            print("query call")
         } else if (sender.direction == .Up) {
             print("Up Swipe")
             displayAd()
         } else if (sender.direction == .Down) {
             print("Down Swipe")
             dismissAll()
+            
         }
     }
+    
+    func updateAd(item:[PFObject]) {
+        currentItem = item
+        print(currentItem)
+    }
+    
+    
+    
+    
+    
     
 
     override func viewDidAppear(animated: Bool) {

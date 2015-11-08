@@ -29,25 +29,30 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KB0-RL-BXn">
-                                <rect key="frame" x="830" y="808" width="260" height="86"/>
-                                <animations/>
-                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="Play Video"/>
-                                <connections>
-                                    <segue destination="Y9p-KL-9Qb" kind="presentation" id="T4Q-oD-5RJ"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="bZy-mv-cxE">
                                 <rect key="frame" x="0.0" y="0.0" width="1920" height="666"/>
                                 <animations/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KB0-RL-BXn">
+                                <rect key="frame" x="734" y="740" width="452" height="266"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="452" id="ISy-vt-irJ"/>
+                                    <constraint firstAttribute="height" constant="266" id="OcB-bo-oE9"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" image="vidBtn"/>
+                                <connections>
+                                    <segue destination="Y9p-KL-9Qb" kind="presentation" id="T4Q-oD-5RJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="KB0-RL-BXn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="810" id="7mg-mF-lcN"/>
+                            <constraint firstItem="KB0-RL-BXn" firstAttribute="centerY" secondItem="QG4-FX-FgS" secondAttribute="centerY" id="5XD-8s-H5C"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QG4-FX-FgS" secondAttribute="bottom" constant="40" id="BkQ-2R-stu"/>
+                            <constraint firstItem="KB0-RL-BXn" firstAttribute="centerX" secondItem="QG4-FX-FgS" secondAttribute="centerX" id="Cb6-Q5-4X5"/>
                             <constraint firstItem="QG4-FX-FgS" firstAttribute="top" secondItem="bZy-mv-cxE" secondAttribute="bottom" constant="100" id="FYa-2u-nWc"/>
                             <constraint firstItem="QG4-FX-FgS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="K4K-cC-h8f"/>
                             <constraint firstItem="bZy-mv-cxE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="NDa-gE-a6w"/>
@@ -56,7 +61,6 @@
                             <constraint firstItem="bZy-mv-cxE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="k2F-rV-r06"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QG4-FX-FgS" secondAttribute="bottom" id="nDT-yP-N1W"/>
                             <constraint firstAttribute="trailing" secondItem="bZy-mv-cxE" secondAttribute="trailing" id="ufJ-mD-18b"/>
-                            <constraint firstItem="KB0-RL-BXn" firstAttribute="top" secondItem="bZy-mv-cxE" secondAttribute="bottom" constant="142" id="v0N-WT-w02"/>
                             <constraint firstItem="QG4-FX-FgS" firstAttribute="top" secondItem="bZy-mv-cxE" secondAttribute="bottom" id="wbE-ul-cuH"/>
                         </constraints>
                     </view>
@@ -178,5 +182,6 @@
     <resources>
         <image name="Image" width="1920" height="720"/>
         <image name="carrot" width="512" height="512"/>
+        <image name="vidBtn" width="663" height="398"/>
     </resources>
 </document>
