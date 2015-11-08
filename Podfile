@@ -4,7 +4,7 @@
 # use_frameworks!
 
 target 'TVShopperTVOS' do
-
+    pod 'Parse', :git => 'git@github.com:ParsePlatform/Parse-SDK-iOS-OSX.git', :branch => 'nlutsenko.tvos.podtest'
 end
 
 target 'TVShopperTVOSTests' do

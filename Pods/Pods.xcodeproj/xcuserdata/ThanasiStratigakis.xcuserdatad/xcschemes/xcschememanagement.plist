@@ -4,7 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>HCYoutubeParser.xcscheme</key>
+		<key>Bolts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Parse.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>7F90D2B7B94F4905B1BB227EC5C9577F</key>
+		<key>3C40AD938D23DF5F8345D23B4D3E1644</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D1511B9E37B51C60BD463ADC7E783945</key>
+		<key>C6E9C464A2D5F12C7940139A3A2CADAB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA6BF94329945F8E04CFB7A232D33346</key>
 		<dict>
 			<key>primary</key>
 			<true/>

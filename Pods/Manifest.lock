@@ -1,10 +1,23 @@
 PODS:
-  - HCYoutubeParser (0.0.4)
+  - Bolts/Tasks (1.4.0)
+  - Parse (1.9.1):
+    - Bolts/Tasks (>= 1.4.0)
 
 DEPENDENCIES:
-  - HCYoutubeParser
+  - Parse (from `git@github.com:ParsePlatform/Parse-SDK-iOS-OSX.git`, branch `nlutsenko.tvos.podtest`)
+
+EXTERNAL SOURCES:
+  Parse:
+    :branch: nlutsenko.tvos.podtest
+    :git: git@github.com:ParsePlatform/Parse-SDK-iOS-OSX.git
+
+CHECKOUT OPTIONS:
+  Parse:
+    :commit: 011e982f16ba6eee6d3cf9092f9c0b812afb83d5
+    :git: git@github.com:ParsePlatform/Parse-SDK-iOS-OSX.git
 
 SPEC CHECKSUMS:
-  HCYoutubeParser: 490db7db2997a293ace484a5d63419b3b053d95f
+  Bolts: 0e9bce58b9b9f5e8a7a4d47b16d2fabec289072b
+  Parse: f7cf7335deb71a78aae092254bb630aa1c6fcf7c
 
 COCOAPODS: 0.39.0

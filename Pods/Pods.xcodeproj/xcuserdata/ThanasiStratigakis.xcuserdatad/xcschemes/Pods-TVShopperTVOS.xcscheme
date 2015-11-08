@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '61E8FAE1F26500A08FA9B03F'
+               BlueprintIdentifier = '47A646A1771A4F2E2454AA37'
                BlueprintName = 'Pods-TVShopperTVOS'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-TVShopperTVOS.a'>

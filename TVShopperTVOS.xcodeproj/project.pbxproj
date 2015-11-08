@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		064D093D1C3522D0BFB249B7 /* libPods-TVShopperTVOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4182E508C7DDD2A0534A7519 /* libPods-TVShopperTVOS.a */; };
 		ED03E6451BEED84700181502 /* VideoParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED03E6441BEED84700181502 /* VideoParentViewController.swift */; };
 		ED2B6D181BEEAEBD00EDC82D /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2B6D171BEEAEBD00EDC82D /* VideoPlayerViewController.swift */; };
 		EDF4AB5F1BEAFABA00100DBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4AB5E1BEAFABA00100DBA /* AppDelegate.swift */; };
@@ -35,8 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FC1C9AD7B94F9D0676C2A2E /* Pods-TVShopperTVOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVShopperTVOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVShopperTVOS/Pods-TVShopperTVOS.release.xcconfig"; sourceTree = "<group>"; };
+		4182E508C7DDD2A0534A7519 /* libPods-TVShopperTVOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TVShopperTVOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED03E6441BEED84700181502 /* VideoParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoParentViewController.swift; sourceTree = "<group>"; };
 		ED2B6D171BEEAEBD00EDC82D /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		ED39F3EB1BEF403D00648EC2 /* TVShopperTVOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TVShopperTVOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		EDF4AB5B1BEAFABA00100DBA /* TVShopperTVOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVShopperTVOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDF4AB5E1BEAFABA00100DBA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDF4AB601BEAFABA00100DBA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,7 @@
 		EDF4AB771BEAFABA00100DBA /* TVShopperTVOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVShopperTVOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDF4AB7B1BEAFABA00100DBA /* TVShopperTVOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShopperTVOSUITests.swift; sourceTree = "<group>"; };
 		EDF4AB7D1BEAFABA00100DBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F866923C1C89233FBF009D3C /* Pods-TVShopperTVOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVShopperTVOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TVShopperTVOS/Pods-TVShopperTVOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				064D093D1C3522D0BFB249B7 /* libPods-TVShopperTVOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +82,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		272FD1033102C73D4B1EF0AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4182E508C7DDD2A0534A7519 /* libPods-TVShopperTVOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50C1F1772277223E7C11251A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F866923C1C89233FBF009D3C /* Pods-TVShopperTVOS.debug.xcconfig */,
+				1FC1C9AD7B94F9D0676C2A2E /* Pods-TVShopperTVOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EDF4AB521BEAFABA00100DBA = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +106,8 @@
 				EDF4AB6F1BEAFABA00100DBA /* TVShopperTVOSTests */,
 				EDF4AB7A1BEAFABA00100DBA /* TVShopperTVOSUITests */,
 				EDF4AB5C1BEAFABA00100DBA /* Products */,
+				50C1F1772277223E7C11251A /* Pods */,
+				272FD1033102C73D4B1EF0AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				EDF4AB5E1BEAFABA00100DBA /* AppDelegate.swift */,
+				ED39F3EB1BEF403D00648EC2 /* TVShopperTVOS-Bridging-Header.h */,
 				EDF4AB601BEAFABA00100DBA /* ViewController.swift */,
 				ED2B6D171BEEAEBD00EDC82D /* VideoPlayerViewController.swift */,
 				ED03E6441BEED84700181502 /* VideoParentViewController.swift */,
@@ -135,9 +161,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EDF4AB801BEAFABA00100DBA /* Build configuration list for PBXNativeTarget "TVShopperTVOS" */;
 			buildPhases = (
+				0F566351F60DAB2BFAD7A5E0 /* Check Pods Manifest.lock */,
 				EDF4AB571BEAFABA00100DBA /* Sources */,
 				EDF4AB581BEAFABA00100DBA /* Frameworks */,
 				EDF4AB591BEAFABA00100DBA /* Resources */,
+				B6C937F01141A0E12D8CDC9D /* Embed Pods Frameworks */,
+				92078C0B7611C04683386D00 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,6 +281,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F566351F60DAB2BFAD7A5E0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		92078C0B7611C04683386D00 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVShopperTVOS/Pods-TVShopperTVOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6C937F01141A0E12D8CDC9D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TVShopperTVOS/Pods-TVShopperTVOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EDF4AB571BEAFABA00100DBA /* Sources */ = {
@@ -391,6 +468,7 @@
 		};
 		EDF4AB811BEAFABA00100DBA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F866923C1C89233FBF009D3C /* Pods-TVShopperTVOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -398,11 +476,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ThanasiStratigakis.TVShopperTVOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TVShopperTVOS/TVShopperTVOS-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		EDF4AB821BEAFABA00100DBA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FC1C9AD7B94F9D0676C2A2E /* Pods-TVShopperTVOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -410,6 +490,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ThanasiStratigakis.TVShopperTVOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TVShopperTVOS/TVShopperTVOS-Bridging-Header.h";
 			};
 			name = Release;
 		};
