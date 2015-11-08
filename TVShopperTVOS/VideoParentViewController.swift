@@ -11,6 +11,11 @@ import UIKit
 class VideoParentViewController: UIViewController {
     
     @IBOutlet weak var popUpHeightConstraint: NSLayoutConstraint!
+    
+
+    
+    
+    
     let displayCarrotConstraintHeight: CGFloat = 130.0
     let displayAdConstraintHeight : CGFloat = 250.0
     
@@ -29,7 +34,72 @@ class VideoParentViewController: UIViewController {
         
         let popUp = self.childViewControllers[1] as? UIViewController
         
+//        
+//        var leftSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+//        var rightSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+//        var upSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handelSwipes:"))
+//        var downSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+//        
+//        
+//        leftSwipe.direction = .Left
+//        rightSwipe.direction = .Right
+//        upSwipe.direction = .Up
+//        downSwipe.direction = .Down
+//        
+//        view.addGestureRecognizer(leftSwipe)
+//        view.addGestureRecognizer(rightSwipe)
+//        view.addGestureRecognizer(upSwipe)
+//        view.addGestureRecognizer(downSwipe)
+        ///////////////////////////
+        
+//        var swipeRight = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+//        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
+//        self.view.addGestureRecognizer(swipeRight)
+//        
+//        var swipeDown = UISwipeGestureRecognizer(target: self, action: "respondToSwipeGesture:")
+//        swipeDown.direction = UISwipeGestureRecognizerDirection.Down
+//        self.view.addGestureRecognizer(swipeDown)
+        
+        
+        
+        print(self.view.canBecomeFocused())
+
+        
     }
+    
+    
+//    func handleSwipes(sender: UISwipeGestureRecognizer) {
+//        
+//        if (sender.direction == .Left) {
+//            print("Left Swipe")
+//        } else if (sender.direction == .Right) {
+//            print("Right Swipe")
+//            
+//        } else if (sender.direction == .Up) {
+//            print("Up Swipe")
+//        } else if (sender.direction == .Down) {
+//            print("Down Swipe")
+//        }
+////        if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+////            
+////            switch swipeGesture.direction {
+////            case UISwipeGestureRecognizerDirection.Right:
+////                print("Swiped right")
+////            case UISwipeGestureRecognizerDirection.Down:
+////                print("Swiped down")
+////            default:
+////                break
+////            }
+////        }
+//    }
+//    func requireGestureRecognizerToFail(_ otherGestureRecognizer: UIGestureRecognizer){
+//        
+//    }
+//
+//    
+//    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldReceiveTouch touch: UITouch) -> Bool {
+//        return true
+//    }
     
     override func viewDidAppear(animated: Bool) {
         displayCarrot()
@@ -37,6 +107,8 @@ class VideoParentViewController: UIViewController {
         
 
     }
+    
+
     
     // animate Carrot out
     func displayCarrot() {

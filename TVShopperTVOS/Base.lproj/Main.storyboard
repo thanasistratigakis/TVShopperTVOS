@@ -100,17 +100,24 @@
                             </containerView>
                         </subviews>
                         <animations/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="onM-xU-3UW" secondAttribute="trailing" id="0W6-zz-agD"/>
                             <constraint firstItem="onM-xU-3UW" firstAttribute="leading" secondItem="1E6-3J-rQ9" secondAttribute="leading" id="HhJ-C0-dtf"/>
                             <constraint firstItem="jE8-ma-hIZ" firstAttribute="top" secondItem="onM-xU-3UW" secondAttribute="bottom" id="Jrj-EW-QQO"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="tu8-gF-g6F" appends="YES" id="1Wi-SU-GZ4"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="popUpHeightConstraint" destination="exr-Nf-PTs" id="cWA-EV-Ie9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Rp-Mx-mdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="hUQ-sE-UEI"/>
+                <swipeGestureRecognizer direction="up" id="S0u-Lq-hLE"/>
+                <swipeGestureRecognizer direction="down" id="w0G-Ch-Scl"/>
             </objects>
             <point key="canvasLocation" x="-856" y="2127"/>
         </scene>
@@ -119,6 +126,11 @@
             <objects>
                 <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="ogZ-tk-OkX" customClass="VideoPlayerViewController" customModule="TVShopperTVOS" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tzh-rQ-9mx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="tu8-gF-g6F">
+                    <connections>
+                        <action selector="rightSwipeAction:" destination="ogZ-tk-OkX" id="PXP-NJ-bag"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1440" y="2127"/>
         </scene>
