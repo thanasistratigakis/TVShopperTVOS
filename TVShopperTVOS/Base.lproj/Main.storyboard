@@ -106,18 +106,12 @@
                             <constraint firstItem="onM-xU-3UW" firstAttribute="leading" secondItem="1E6-3J-rQ9" secondAttribute="leading" id="HhJ-C0-dtf"/>
                             <constraint firstItem="jE8-ma-hIZ" firstAttribute="top" secondItem="onM-xU-3UW" secondAttribute="bottom" id="Jrj-EW-QQO"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="tu8-gF-g6F" appends="YES" id="1Wi-SU-GZ4"/>
-                        </connections>
                     </view>
                     <connections>
                         <outlet property="popUpHeightConstraint" destination="exr-Nf-PTs" id="cWA-EV-Ie9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Rp-Mx-mdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="hUQ-sE-UEI"/>
-                <swipeGestureRecognizer direction="up" id="S0u-Lq-hLE"/>
-                <swipeGestureRecognizer direction="down" id="w0G-Ch-Scl"/>
             </objects>
             <point key="canvasLocation" x="-856" y="2127"/>
         </scene>
@@ -126,11 +120,6 @@
             <objects>
                 <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="ogZ-tk-OkX" customClass="VideoPlayerViewController" customModule="TVShopperTVOS" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tzh-rQ-9mx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="tu8-gF-g6F">
-                    <connections>
-                        <action selector="rightSwipeAction:" destination="ogZ-tk-OkX" id="PXP-NJ-bag"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1440" y="2127"/>
         </scene>
@@ -154,22 +143,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="171"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carrot" translatesAutoresizingMaskIntoConstraints="NO" id="aCd-vD-EEF">
-                                <rect key="frame" x="920" y="16" width="80" height="80"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d6p-5p-miG">
+                                <rect key="frame" x="0.0" y="130" width="1920" height="400"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.98989898989898994" green="1" blue="1" alpha="0.74232801258992809" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="zq4-ev-boE"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="carrot" translatesAutoresizingMaskIntoConstraints="NO" id="aCd-vD-EEF">
+                                <rect key="frame" x="920" y="20" width="80" height="80"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="j0a-9w-gcV"/>
                                     <constraint firstAttribute="height" constant="80" id="s6D-kG-fc8"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d6p-5p-miG">
-                                <rect key="frame" x="0.0" y="130" width="1920" height="128"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.99481930002456331" green="1" blue="0.99001541184140895" alpha="0.46312949640287771" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="zq4-ev-boE"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <animations/>
                         <constraints>
@@ -183,7 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u5r-rI-vRM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-856" y="2916.5"/>
+            <point key="canvasLocation" x="-899" y="2790.5"/>
         </scene>
     </scenes>
     <resources>
