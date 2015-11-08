@@ -13,9 +13,6 @@ class VideoParentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
-        
         //here you want to loop through self.childviewcontrollers - get the av one and config it
         
         //get the ref to the video player vc
@@ -24,6 +21,8 @@ class VideoParentViewController: UIViewController {
         
         let videoPlayer = self.childViewControllers[0] as! VideoPlayerViewController
         videoPlayer.playVideo()
+        
+        let popUp = self.childViewControllers[1] as? UIViewController
         
     }
 

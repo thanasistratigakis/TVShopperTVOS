@@ -11,6 +11,9 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
+
+
+    
     
     @IBAction func playVideoAction(sender: AnyObject) {
         

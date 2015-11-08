@@ -17,9 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QG4-FX-FgS">
-                                <rect key="frame" x="0.0" y="735" width="1920" height="345"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QG4-FX-FgS">
+                                <rect key="frame" x="-97" y="666" width="67" height="414"/>
                                 <animations/>
+                                <color key="backgroundColor" red="1" green="0.30839280428239313" blue="0.050991134402035954" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HGU-Ka-rah">
                                     <size key="itemSize" width="612" height="338"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -28,7 +29,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VideoCell" id="d0s-HF-lLf" customClass="VideoCollectionViewCell" customModule="TVShopperTVOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="612" height="338"/>
+                                        <rect key="frame" x="-273" y="0.0" width="612" height="338"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="612" height="338"/>
@@ -88,12 +89,15 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="KB0-RL-BXn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="810" id="7mg-mF-lcN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QG4-FX-FgS" secondAttribute="bottom" id="BkQ-2R-stu"/>
+                            <constraint firstItem="QG4-FX-FgS" firstAttribute="top" secondItem="bZy-mv-cxE" secondAttribute="bottom" constant="100" id="FYa-2u-nWc"/>
                             <constraint firstItem="bZy-mv-cxE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="NDa-gE-a6w"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KB0-RL-BXn" secondAttribute="trailing" constant="810" id="d0Z-at-0jj"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bZy-mv-cxE" secondAttribute="bottom" constant="414" id="eYK-9w-kIh"/>
                             <constraint firstItem="bZy-mv-cxE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="k2F-rV-r06"/>
                             <constraint firstAttribute="trailing" secondItem="bZy-mv-cxE" secondAttribute="trailing" id="ufJ-mD-18b"/>
                             <constraint firstItem="KB0-RL-BXn" firstAttribute="top" secondItem="bZy-mv-cxE" secondAttribute="bottom" constant="142" id="v0N-WT-w02"/>
+                            <constraint firstItem="QG4-FX-FgS" firstAttribute="top" secondItem="bZy-mv-cxE" secondAttribute="bottom" id="wbE-ul-cuH"/>
                         </constraints>
                     </view>
                     <connections>
@@ -168,11 +172,15 @@
         <scene sceneID="aEf-gr-Rby">
             <objects>
                 <viewController id="Khi-hm-Hpd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LEl-Ml-6g6"/>
+                        <viewControllerLayoutGuide type="bottom" id="3rP-DS-oXm"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Vqn-nc-QvW">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="171"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
-                        <color key="backgroundColor" red="0.070508101180000005" green="1" blue="0.81771269680000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.20359531889999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u5r-rI-vRM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -181,6 +189,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="1024" height="576"/>
+        <image name="Image" width="1920" height="720"/>
     </resources>
 </document>

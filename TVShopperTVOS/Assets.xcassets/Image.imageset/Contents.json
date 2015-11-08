@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "movies_in_real_life-1024x576.jpg",
+      "filename" : "Top_Shelf.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "movies_in_real_life-1024x576-1.jpg",
+      "filename" : "Top_Shelf-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "movies_in_real_life-1024x576-2.jpg",
+      "filename" : "Top_Shelf-2.png",
       "scale" : "3x"
     }
   ],
