@@ -13,7 +13,11 @@ class VideoParentViewController: UIViewController {
     
     @IBOutlet weak var popUpHeightConstraint: NSLayoutConstraint!
     
+    
+    
     var currentItem: [PFObject] = [];
+    
+    
 
     
     let displayCarrotConstraintHeight: CGFloat = 130.0

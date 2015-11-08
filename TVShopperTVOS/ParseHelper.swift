@@ -41,13 +41,30 @@ class ParseHelper: NSObject {
             }
         }
     }
+    
+    static func queryIPhone() {
+        let query = PFQuery(className:"Items")
+        query.getObjectInBackgroundWithId("NxkNHPjSns") {
+            (product: PFObject?, error: NSError?) -> Void in
+            if error == nil && product != nil {
+                print(product)
+            } else {
+                print(error)
+            }
+        }
+    }
+    
+    static func queryRoku() {
+        let query = PFQuery(className:"Items")
+        query.getObjectInBackgroundWithId("ue31pDZf2e") {
+            (product: PFObject?, error: NSError?) -> Void in
+            if error == nil && product != nil {
+                print(product)
+            } else {
+                print(error)
+            }
+        }
 
+    }
     
-    
-    
-    
-    
-    
-    
-
 }
