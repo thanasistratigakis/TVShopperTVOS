@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVKit
 
 
 class VideoParentViewController: UIViewController {
@@ -18,27 +19,27 @@ class VideoParentViewController: UIViewController {
     var currentItem: PFObject!
     
     var popUpAdChild: popUpAdViewController?
+    var playerChild: AVPlayerViewController?
+    
+    var secondsElapsed: Int = 0
 
     
     let displayCarrotConstraintHeight: CGFloat = 130.0
     let displayAdConstraintHeight : CGFloat = 280.0
     
+    var state: Int = 0
+    var adNum: Int = 1
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
+        
         popUpAdChild = self.childViewControllers[1].childViewControllers[0] as! popUpAdViewController
 
-        print(self.childViewControllers[1].childViewControllers)
-        
+        playerChild = self.childViewControllers[0] as! AVPlayerViewController
 
-
-
-        //here you want to loop through self.childviewcontrollers - get the av one and config it
-        
-        //get the ref to the video player vc
-        
-        //here you want to setup the other child view cont  with ui
         
         let videoPlayer = self.childViewControllers[0] as! VideoPlayerViewController
         videoPlayer.playVideo()
@@ -62,9 +63,14 @@ class VideoParentViewController: UIViewController {
         view.addGestureRecognizer(rightSwipe)
         view.addGestureRecognizer(upSwipe)
         view.addGestureRecognizer(downSwipe)
+        
+        queryBoostedBoard()
+
+        
+        
     }
     
-    
+
     func handleSwipes(sender: UISwipeGestureRecognizer) {
         
         if (sender.direction == .Left) {
@@ -72,14 +78,14 @@ class VideoParentViewController: UIViewController {
         } else if (sender.direction == .Right) {
             print("Right Swipe")
 //            ParseHelper.queryItemForName("Boosted Electric Skateboard", callBack: updateAd)
-            queryBoostedBoard()
+            queryIPhone()
             print("query call")
         } else if (sender.direction == .Up) {
             print("Up Swipe")
-            displayAd()
+            moveUp()
         } else if (sender.direction == .Down) {
             print("Down Swipe")
-            dismissAll()
+            moveDown()
             
         }
     }
@@ -89,11 +95,26 @@ class VideoParentViewController: UIViewController {
         query.getObjectInBackgroundWithId("KXE4JIeG7P") {
             (product: PFObject?, error: NSError?) -> Void in
             if error == nil && product != nil {
-                self.popUpAdChild?.productNameLabel.text = product?.objectForKey("Name") as! String
-                self.popUpAdChild?.companyNameLabel.text = product?.objectForKey("Company") as! String
+                
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                
+                self.popUpAdChild?.productNameLabel.text = product?.objectForKey("Name") as? String
+                self.popUpAdChild?.companyNameLabel.text = product?.objectForKey("Company") as? String
             
                 self.popUpAdChild?.priceLabel.text = "$" + String(product?.objectForKey("Price") as! Int)
-//                self.popUpAdChild?.imageView = product?.objectForKey("Picture")
+                //self.popUpAdChild?.imageView.image = product?.objectForKey("Picture") as! UIImage
+                
+                
+                    //if let imageURL = NSBundle.mainBundle().URLForResource("imageName", withExtension: "jpg")
+                    
+                    let url = NSURL(string : "http://files.parsetfss.com/dfb167dc-c199-4ab6-992b-1246f0e39d45/tfss-1aba9163-28a3-4146-970b-1c28a6e96bbe-boosted.png")
+                        let data = NSData(contentsOfURL: url!)
+
+                            self.popUpAdChild?.imageView.image = UIImage(data: data!)
+
+                })
+                
+
                 
 
             } else {
@@ -116,6 +137,14 @@ class VideoParentViewController: UIViewController {
                 //                self.popUpAdChild?.imageView = product?.objectForKey("Picture")
                 
                 
+                
+                let url = NSURL(string : "http://files.parsetfss.com/dfb167dc-c199-4ab6-992b-1246f0e39d45/tfss-bc6182f4-bc06-4908-b7ec-c59890b49305-iPhone6S.png")
+                let data = NSData(contentsOfURL: url!)
+                
+
+                
+                self.popUpAdChild?.imageView.image = UIImage(data: data!)
+                
             } else {
                 print(error)
             }
@@ -135,6 +164,14 @@ class VideoParentViewController: UIViewController {
                 //                self.popUpAdChild?.imageView = product?.objectForKey("Picture")
                 
                 
+                
+                let url = NSURL(string : "http://files.parsetfss.com/dfb167dc-c199-4ab6-992b-1246f0e39d45/tfss-4fb490aa-0cfa-41ec-9c8b-534320f90f22-roku4.png")
+                let data = NSData(contentsOfURL: url!)
+
+                
+                self.popUpAdChild?.imageView.image = UIImage(data: data!)
+                
+                
             } else {
                 print(error)
             }
@@ -146,8 +183,6 @@ class VideoParentViewController: UIViewController {
     
     
     override func viewDidAppear(animated: Bool) {
-        
-        displayCarrot()
         
     }
 
@@ -161,35 +196,42 @@ class VideoParentViewController: UIViewController {
     }
     
     // animate add out
-    func displayAd() {
+    func moveUp() {
         UIView.animateWithDuration(0.5, animations: {
-            self.popUpHeightConstraint.constant = self.displayAdConstraintHeight
+            if self.state == 0 {
+                self.popUpHeightConstraint.constant = self.displayCarrotConstraintHeight
+                self.state += 1
+                
+            } else if self.state == 1 {
+                self.popUpHeightConstraint.constant = self.displayAdConstraintHeight
+                self.state += 1
+            }
+            
             self.view.layoutIfNeeded()
         })
     }
     
     // animate carrot out carrot
-    func dismissAll() {
+    func moveDown() {
         UIView.animateWithDuration(0.5, animations: { () -> Void in
+            
             self.popUpHeightConstraint.constant = 0
+            self.state = 0
             self.view.layoutIfNeeded()
         })
+        self.adNum++
+        if self.adNum == 2 {
+            queryIPhone()
+        } else if self.adNum == 3 {
+            queryRoku() 
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

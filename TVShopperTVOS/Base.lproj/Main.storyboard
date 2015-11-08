@@ -218,7 +218,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="720" height="150"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carrot" translatesAutoresizingMaskIntoConstraints="NO" id="xpe-JT-zfS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carrot" translatesAutoresizingMaskIntoConstraints="NO" id="xpe-JT-zfS">
                                 <rect key="frame" x="10" y="10" width="130" height="130"/>
                                 <animations/>
                                 <constraints>
