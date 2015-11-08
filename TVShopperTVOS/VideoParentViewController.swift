@@ -10,9 +10,10 @@ import UIKit
 
 class VideoParentViewController: UIViewController {
     
-    //@IBOutlet var popUpHeightConstraint: NSLayoutConstraint!
-    
     @IBOutlet weak var popUpHeightConstraint: NSLayoutConstraint!
+    let displayCarrotConstraintHeight: CGFloat = 130.0
+    let displayAdConstraintHeight : CGFloat = 250.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,36 +25,45 @@ class VideoParentViewController: UIViewController {
         
         let videoPlayer = self.childViewControllers[0] as! VideoPlayerViewController
         videoPlayer.playVideo()
-        popUpHeightConstraint.constant = 20
+        popUpHeightConstraint.constant = 0.0
         
         let popUp = self.childViewControllers[1] as? UIViewController
-        
-
         
     }
     
     override func viewDidAppear(animated: Bool) {
-        revealCarrot()
+        displayCarrot()
+        
+        
+
     }
     
     // animate Carrot out
-    func revealCarrot() {
+    func displayCarrot() {
         
-        UIView.animateWithDuration(1, animations: {
-            self.popUpHeightConstraint.constant = 150
+        
+        UIView.animateWithDuration(0.5, animations: {
+            self.popUpHeightConstraint.constant = self.displayCarrotConstraintHeight
             self.view.layoutIfNeeded()
         })
         
     }
     
     // animate add out
-    func revealAdd() {
-        
+    func displayAd() {
+        UIView.animateWithDuration(0.5, animations: { () -> Void in
+            self.popUpHeightConstraint.constant = self.displayAdConstraintHeight
+            self.view.layoutIfNeeded()
+        })
+        displayCarrot()
     }
     
     // animate carrot out carrot
-    func dismissCarrot() {
-        
+    func dismissAll() {
+        UIView.animateWithDuration(0.5, animations: { () -> Void in
+            self.popUpHeightConstraint.constant = 0
+            self.view.layoutIfNeeded()
+        })
     }
 
     override func didReceiveMemoryWarning() {
