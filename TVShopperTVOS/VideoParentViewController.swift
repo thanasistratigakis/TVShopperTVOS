@@ -9,7 +9,10 @@
 import UIKit
 
 class VideoParentViewController: UIViewController {
-
+    
+    //@IBOutlet var popUpHeightConstraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var popUpHeightConstraint: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +24,7 @@ class VideoParentViewController: UIViewController {
         
         let videoPlayer = self.childViewControllers[0] as! VideoPlayerViewController
         videoPlayer.playVideo()
+        popUpHeightConstraint.constant = 20
         
         let popUp = self.childViewControllers[1] as? UIViewController
         

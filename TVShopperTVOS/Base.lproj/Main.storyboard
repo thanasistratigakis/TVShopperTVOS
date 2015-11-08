@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QG4-FX-FgS">
-                                <rect key="frame" x="-97" y="666" width="67" height="414"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QG4-FX-FgS">
+                                <rect key="frame" x="0.0" y="666" width="1920" height="414"/>
                                 <animations/>
                                 <color key="backgroundColor" red="1" green="0.30839280428239313" blue="0.050991134402035954" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HGU-Ka-rah">
@@ -27,54 +27,8 @@
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VideoCell" id="d0s-HF-lLf" customClass="VideoCollectionViewCell" customModule="TVShopperTVOS" customModuleProvider="target">
-                                        <rect key="frame" x="-273" y="0.0" width="612" height="338"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="612" height="338"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="Fca-gW-sB3">
-                                                    <rect key="frame" x="30" y="23" width="552" height="267"/>
-                                                    <animations/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Seh-20-00W">
-                                                    <rect key="frame" x="30" y="315" width="552" height="21"/>
-                                                    <animations/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="35" id="Lrs-TE-EQP"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <animations/>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                        <animations/>
-                                        <constraints>
-                                            <constraint firstItem="Seh-20-00W" firstAttribute="leading" secondItem="d0s-HF-lLf" secondAttribute="leadingMargin" constant="22" id="CwH-iP-YAu"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="Seh-20-00W" secondAttribute="trailing" constant="22" id="EeR-ou-nGU"/>
-                                            <constraint firstAttribute="trailingMargin" secondItem="Fca-gW-sB3" secondAttribute="trailing" constant="22" id="Htc-J1-GAa"/>
-                                            <constraint firstItem="Seh-20-00W" firstAttribute="top" secondItem="Fca-gW-sB3" secondAttribute="bottom" constant="25" id="RuH-bY-9PC"/>
-                                            <constraint firstItem="Fca-gW-sB3" firstAttribute="top" secondItem="d0s-HF-lLf" secondAttribute="topMargin" constant="15" id="lZ1-t8-b4h"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="Fca-gW-sB3" secondAttribute="bottom" constant="40" id="qWa-rC-e7I"/>
-                                            <constraint firstItem="Fca-gW-sB3" firstAttribute="leading" secondItem="d0s-HF-lLf" secondAttribute="leadingMargin" constant="22" id="tEH-Xg-4LQ"/>
-                                        </constraints>
-                                        <size key="customSize" width="612" height="338"/>
-                                        <connections>
-                                            <outlet property="videoImage" destination="Fca-gW-sB3" id="K8r-pc-bwc"/>
-                                            <outlet property="videoLabel" destination="Seh-20-00W" id="U66-zK-1g7"/>
-                                        </connections>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
                             </collectionView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="bZy-mv-cxE">
-                                <rect key="frame" x="0.0" y="0.0" width="1920" height="666"/>
-                                <animations/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KB0-RL-BXn">
                                 <rect key="frame" x="830" y="808" width="260" height="86"/>
                                 <animations/>
@@ -84,17 +38,23 @@
                                     <segue destination="Y9p-KL-9Qb" kind="presentation" id="T4Q-oD-5RJ"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="bZy-mv-cxE">
+                                <rect key="frame" x="0.0" y="0.0" width="1920" height="666"/>
+                                <animations/>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="KB0-RL-BXn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="810" id="7mg-mF-lcN"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QG4-FX-FgS" secondAttribute="bottom" id="BkQ-2R-stu"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QG4-FX-FgS" secondAttribute="bottom" constant="40" id="BkQ-2R-stu"/>
                             <constraint firstItem="QG4-FX-FgS" firstAttribute="top" secondItem="bZy-mv-cxE" secondAttribute="bottom" constant="100" id="FYa-2u-nWc"/>
+                            <constraint firstItem="QG4-FX-FgS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="K4K-cC-h8f"/>
                             <constraint firstItem="bZy-mv-cxE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="NDa-gE-a6w"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="KB0-RL-BXn" secondAttribute="trailing" constant="810" id="d0Z-at-0jj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QG4-FX-FgS" secondAttribute="trailing" constant="-20" id="bEj-3X-ibR"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bZy-mv-cxE" secondAttribute="bottom" constant="414" id="eYK-9w-kIh"/>
                             <constraint firstItem="bZy-mv-cxE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="k2F-rV-r06"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QG4-FX-FgS" secondAttribute="bottom" id="nDT-yP-N1W"/>
                             <constraint firstAttribute="trailing" secondItem="bZy-mv-cxE" secondAttribute="trailing" id="ufJ-mD-18b"/>
                             <constraint firstItem="KB0-RL-BXn" firstAttribute="top" secondItem="bZy-mv-cxE" secondAttribute="bottom" constant="142" id="v0N-WT-w02"/>
                             <constraint firstItem="QG4-FX-FgS" firstAttribute="top" secondItem="bZy-mv-cxE" secondAttribute="bottom" id="wbE-ul-cuH"/>
@@ -106,7 +66,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="56" y="636"/>
+            <point key="canvasLocation" x="-92" y="640"/>
         </scene>
         <!--Video Parent View Controller-->
         <scene sceneID="UMP-D7-kLB">
@@ -147,6 +107,9 @@
                             <constraint firstItem="jE8-ma-hIZ" firstAttribute="top" secondItem="onM-xU-3UW" secondAttribute="bottom" id="Jrj-EW-QQO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="popUpHeightConstraint" destination="exr-Nf-PTs" id="cWA-EV-Ie9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Rp-Mx-mdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

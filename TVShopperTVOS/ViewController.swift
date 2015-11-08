@@ -11,9 +11,10 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
-
-
     
+//    @IBoutlet weak var contraint: UIConstr
+
+
     
     @IBAction func playVideoAction(sender: AnyObject) {
         
