@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		064D093D1C3522D0BFB249B7 /* libPods-TVShopperTVOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4182E508C7DDD2A0534A7519 /* libPods-TVShopperTVOS.a */; };
 		ED03E6451BEED84700181502 /* VideoParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED03E6441BEED84700181502 /* VideoParentViewController.swift */; };
+		ED0D23641BEF8EA80046AEA3 /* popUpAdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0D23631BEF8EA80046AEA3 /* popUpAdViewController.swift */; };
 		ED2B6D181BEEAEBD00EDC82D /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2B6D171BEEAEBD00EDC82D /* VideoPlayerViewController.swift */; };
 		ED39F3ED1BEF4ACB00648EC2 /* ParseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED39F3EC1BEF4ACB00648EC2 /* ParseHelper.swift */; };
 		EDF4AB5F1BEAFABA00100DBA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF4AB5E1BEAFABA00100DBA /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 		1FC1C9AD7B94F9D0676C2A2E /* Pods-TVShopperTVOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TVShopperTVOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-TVShopperTVOS/Pods-TVShopperTVOS.release.xcconfig"; sourceTree = "<group>"; };
 		4182E508C7DDD2A0534A7519 /* libPods-TVShopperTVOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TVShopperTVOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED03E6441BEED84700181502 /* VideoParentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoParentViewController.swift; sourceTree = "<group>"; };
+		ED0D23631BEF8EA80046AEA3 /* popUpAdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = popUpAdViewController.swift; sourceTree = "<group>"; };
 		ED2B6D171BEEAEBD00EDC82D /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		ED39F3EB1BEF403D00648EC2 /* TVShopperTVOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TVShopperTVOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		ED39F3EC1BEF4ACB00648EC2 /* ParseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseHelper.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				EDF4AB601BEAFABA00100DBA /* ViewController.swift */,
 				ED2B6D171BEEAEBD00EDC82D /* VideoPlayerViewController.swift */,
 				ED03E6441BEED84700181502 /* VideoParentViewController.swift */,
+				ED0D23631BEF8EA80046AEA3 /* popUpAdViewController.swift */,
 				EDF4AB621BEAFABA00100DBA /* Main.storyboard */,
 				EDF4AB651BEAFABA00100DBA /* Assets.xcassets */,
 				EDF4AB671BEAFABA00100DBA /* Info.plist */,
@@ -342,6 +345,7 @@
 				EDF4AB611BEAFABA00100DBA /* ViewController.swift in Sources */,
 				ED03E6451BEED84700181502 /* VideoParentViewController.swift in Sources */,
 				EDF4AB5F1BEAFABA00100DBA /* AppDelegate.swift in Sources */,
+				ED0D23641BEF8EA80046AEA3 /* popUpAdViewController.swift in Sources */,
 				ED39F3ED1BEF4ACB00648EC2 /* ParseHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

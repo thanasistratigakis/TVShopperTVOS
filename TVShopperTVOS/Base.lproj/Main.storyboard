@@ -206,10 +206,10 @@
             </objects>
             <point key="canvasLocation" x="-856" y="2854.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Pop Up Ad View Controller-->
         <scene sceneID="DDY-GJ-QET">
             <objects>
-                <viewController id="x2C-8i-4eh" customClass="ViewController" customModule="TVShopperTVOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="x2C-8i-4eh" customClass="popUpAdViewController" customModule="TVShopperTVOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cUc-Sg-2X5"/>
                         <viewControllerLayoutGuide type="bottom" id="rhc-aX-Jd0"/>
@@ -233,6 +233,12 @@
                                 <color key="textColor" red="0.21698031770000001" green="0.20541136409999999" blue="0.2150452346" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Company" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbw-Em-Xdz">
+                                <rect key="frame" x="170" y="92" width="192" height="29"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKe-Bz-SZ8">
                                 <rect key="frame" x="482" y="60" width="218" height="29"/>
                                 <animations/>
@@ -241,12 +247,6 @@
                                     <constraint firstAttribute="width" constant="218" id="DiH-Ax-H7l"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Company" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbw-Em-Xdz">
-                                <rect key="frame" x="170" y="92" width="192" height="29"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -263,6 +263,12 @@
                             <constraint firstItem="fKe-Bz-SZ8" firstAttribute="trailing" secondItem="TFk-lv-JvT" secondAttribute="trailingMargin" id="x0H-d2-dae"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="companyNameLabel" destination="Fbw-Em-Xdz" id="dOk-ac-TGc"/>
+                        <outlet property="imageView" destination="xpe-JT-zfS" id="n9F-44-g8n"/>
+                        <outlet property="priceLabel" destination="fKe-Bz-SZ8" id="t1Y-mo-wdl"/>
+                        <outlet property="productNameLabel" destination="UuA-Mv-TPh" id="NvA-bS-0Y3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z9v-v4-Tn3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

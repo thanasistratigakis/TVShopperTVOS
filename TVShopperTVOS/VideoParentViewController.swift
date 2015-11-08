@@ -13,11 +13,11 @@ class VideoParentViewController: UIViewController {
     
     @IBOutlet weak var popUpHeightConstraint: NSLayoutConstraint!
     
+
     
+    var currentItem: PFObject!
     
-    var currentItem: [PFObject] = [];
-    
-    
+    var popUpAdChild: popUpAdViewController?
 
     
     let displayCarrotConstraintHeight: CGFloat = 130.0
@@ -25,6 +25,14 @@ class VideoParentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        popUpAdChild = self.childViewControllers[1].childViewControllers[0] as! popUpAdViewController
+
+        print(self.childViewControllers[1].childViewControllers)
+        
+
+
 
         //here you want to loop through self.childviewcontrollers - get the av one and config it
         
@@ -64,7 +72,7 @@ class VideoParentViewController: UIViewController {
         } else if (sender.direction == .Right) {
             print("Right Swipe")
 //            ParseHelper.queryItemForName("Boosted Electric Skateboard", callBack: updateAd)
-            ParseHelper.queryBoostedBoard()
+            queryBoostedBoard()
             print("query call")
         } else if (sender.direction == .Up) {
             print("Up Swipe")
@@ -76,34 +84,80 @@ class VideoParentViewController: UIViewController {
         }
     }
     
-    func updateAd(item:[PFObject]) {
-        currentItem = item
-        print(currentItem)
+    func queryBoostedBoard() {
+        let query = PFQuery(className:"Items")
+        query.getObjectInBackgroundWithId("KXE4JIeG7P") {
+            (product: PFObject?, error: NSError?) -> Void in
+            if error == nil && product != nil {
+                self.popUpAdChild?.productNameLabel.text = product?.objectForKey("Name") as! String
+                self.popUpAdChild?.companyNameLabel.text = product?.objectForKey("Company") as! String
+            
+                self.popUpAdChild?.priceLabel.text = "$" + String(product?.objectForKey("Price") as! Int)
+//                self.popUpAdChild?.imageView = product?.objectForKey("Picture")
+                
+
+            } else {
+                print(error)
+            }
+        }
+    }
+    
+    
+    
+    func queryIPhone() {
+        let query = PFQuery(className:"Items")
+        query.getObjectInBackgroundWithId("NxkNHPjSns") {
+            (product: PFObject?, error: NSError?) -> Void in
+            if error == nil && product != nil {
+                self.popUpAdChild?.productNameLabel.text = product?.objectForKey("Name") as! String
+                self.popUpAdChild?.companyNameLabel.text = product?.objectForKey("Company") as! String
+                
+                self.popUpAdChild?.priceLabel.text = "$" + String(product?.objectForKey("Price") as! Int)
+                //                self.popUpAdChild?.imageView = product?.objectForKey("Picture")
+                
+                
+            } else {
+                print(error)
+            }
+        }
+    }
+    
+    
+    func queryRoku() {
+        let query = PFQuery(className:"Items")
+        query.getObjectInBackgroundWithId("ue31pDZf2e") {
+            (product: PFObject?, error: NSError?) -> Void in
+            if error == nil && product != nil {
+                self.popUpAdChild?.productNameLabel.text = product?.objectForKey("Name") as! String
+                self.popUpAdChild?.companyNameLabel.text = product?.objectForKey("Company") as! String
+                
+                self.popUpAdChild?.priceLabel.text = "$" + String(product?.objectForKey("Price") as! Int)
+                //                self.popUpAdChild?.imageView = product?.objectForKey("Picture")
+                
+                
+            } else {
+                print(error)
+            }
+        }
     }
     
     
     
     
     
-    
-
     override func viewDidAppear(animated: Bool) {
         
         displayCarrot()
         
-
     }
 
     
     // animate Carrot out
     func displayCarrot() {
-        
-        
         UIView.animateWithDuration(0.5, animations: {
             self.popUpHeightConstraint.constant = self.displayCarrotConstraintHeight
             self.view.layoutIfNeeded()
         })
-        
     }
     
     // animate add out
@@ -112,7 +166,6 @@ class VideoParentViewController: UIViewController {
             self.popUpHeightConstraint.constant = self.displayAdConstraintHeight
             self.view.layoutIfNeeded()
         })
-        
     }
     
     // animate carrot out carrot
