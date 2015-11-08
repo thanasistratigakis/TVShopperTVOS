@@ -15,6 +15,8 @@ class VideoParentViewController: UIViewController {
     @IBOutlet weak var popUpHeightConstraint: NSLayoutConstraint!
     
 
+    @IBOutlet weak var checkImage: UIImageView!
+    
     
     var currentItem: PFObject!
     
@@ -34,7 +36,11 @@ class VideoParentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        checkImage.alpha = 0.0
         
+        let tap = UITapGestureRecognizer(target: self, action: "tapped:")
+        tap.allowedPressTypes = [NSNumber(integer: UIPressType.Select.rawValue)]
+        view.addGestureRecognizer(tap)
         
         popUpAdChild = self.childViewControllers[1].childViewControllers[0] as! popUpAdViewController
 
@@ -65,8 +71,18 @@ class VideoParentViewController: UIViewController {
         view.addGestureRecognizer(downSwipe)
         
         queryBoostedBoard()
+    }
+    
+    func tapped(gesture: UITapGestureRecognizer) {
+        print("click")
+        moveDown()
+        UIView.animateWithDuration(0.5, animations: { () -> Void in
+            self.checkImage.alpha = 1.0
+        })
+        UIView.animateWithDuration(1.5, animations: { () -> Void in
+            self.checkImage.alpha = 0.0
+        })
 
-        
         
     }
     
@@ -86,7 +102,6 @@ class VideoParentViewController: UIViewController {
         } else if (sender.direction == .Down) {
             print("Down Swipe")
             moveDown()
-            
         }
     }
     
@@ -111,11 +126,7 @@ class VideoParentViewController: UIViewController {
                         let data = NSData(contentsOfURL: url!)
 
                             self.popUpAdChild?.imageView.image = UIImage(data: data!)
-
                 })
-                
-
-                
 
             } else {
                 print(error)
@@ -223,7 +234,7 @@ class VideoParentViewController: UIViewController {
         if self.adNum == 2 {
             queryIPhone()
         } else if self.adNum == 3 {
-            queryRoku() 
+            queryRoku()
         }
         
     }
