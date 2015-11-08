@@ -1,5 +1,5 @@
 //
-//  VideoPlayerViewController.swift
+//  VideoParentViewController.swift
 //  TVShopperTVOS
 //
 //  Created by Thanasi Stratigakis on 11/7/15.
@@ -7,19 +7,23 @@
 //
 
 import UIKit
-import AVFoundation
-import AVKit
 
-class VideoPlayerViewController: AVPlayerViewController, AVPlayerViewControllerDelegate{
+class VideoParentViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    }
-    
-    func playVideo() {
-        player = AVPlayer(URL: NSURL(string: "https://trello-attachments.s3.amazonaws.com/563ab806b4340cec94805569/563e7678b1f3afcd911bb309/0e268f3cd9412fa33d700a3cd840b5ff/Pharrell_Williams_-_Happy_(Official_Music_Video).mp4")!)
-        player?.play()
+        // Do any additional setup after loading the view.
+        
+        
+        //here you want to loop through self.childviewcontrollers - get the av one and config it
+        
+        //get the ref to the video player vc
+        
+        //here you want to setup the other child view cont  with ui
+        
+        let videoPlayer = self.childViewControllers[0] as! VideoPlayerViewController
+        videoPlayer.playVideo()
         
     }
 
